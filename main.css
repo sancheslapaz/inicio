@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+}
+
+/*body{
+    border:1px solid darkblue;
+}*/
+
+h1, h2, h3, li, p{
+    color:black;
+    font-family:Georgia, "Times New Roman", Times, Sherif; 
+}
+
+h1, h2{
+    text-align:center;
+}
+
+h1{
+    padding:10px;
+}
+
+h2{
+    font-size:4em;
+}
+
+h3{
+    font-size:2em;
+}
+
+a{
+    text-decoration:none;
+}
+
+/****************************
+ ***** Classes no HTML5 *****
+ ****************************/
+
+/************************************
+ ***** Identificadores no HTML5 *****
+ ************************************/
+#contenido{
+    width:95%;
+    margin: 0 35px;
+    font-family:Georgia, "Times New Roman", Times, Sherif;
+}
+
+#encabezado{
+    text-align:center;
+    padding:4px 8px 4px 8px;
+    background-color:floralwhite;
+    padding:30px;
+}
+
+#menu{
+    text-align:center;
+    padding:5px 10px 4px 10px;
+    background-color:floralwhite;
+    border-bottom:#8c8c8c;
+}
+
+#menu li{
+    display:inline;
+    margin:0;
+}
+
+#menu a{
+    color:darkblue;
+    background-color:floralwhite;
+    padding:4px 8px 4px 8px;    /*Top Right Bottom Left - TRBL*/
+    border:1px solid #8c8c8c;
+}
+
+#menu a:hover{
+    text-decoration:none;
+    color:darkblue;
+    background-color: burlywood;
+    border-bottom:none;
+}
