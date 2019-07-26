@@ -34,6 +34,7 @@ html, body{
 body{
     width: 100%;
     height: 100%;
+    background-color: lightgray;
 }
 header{
     width: 90%;
@@ -161,6 +162,7 @@ a:hover{
 
 /********************************************
  ***** Monitor de computador e Notebook *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (min-width: 754px) and (max-width: 874px){
     a{
@@ -177,6 +179,7 @@ a:hover{
 
 /********************************************
  *****          Monitor Celular         *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (min-width: 632px) and (max-width: 753px){
     a{
@@ -192,7 +195,8 @@ a:hover{
  ********************************************/
 
 /********************************************
- ***** Monitor de computador e Notebook *****
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
  ********************************************/
 @media only screen and (max-width: 631px){
     a{
