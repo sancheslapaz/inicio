@@ -1,40 +1,454 @@
-<!DOCTYPE html>								<!-- Declaração para o navegador de página HTML -->
-<html lang="pt-br">
-	<head>                                                                              <!-- Inicio de cabeçalho da página -->
-        <meta charset="utf-8">
-        <meta name="description" content="Estudo de eletroeletronica - página inicial">
-        <title>Página Inicial</title>                                                   <!-- Titulo da minha barra do Crome -->
-        <link type="text/css" rel="stylesheet" href="main.css">                         <!-- Definição de estilo no arquivo CSS -->
-	</head>
-	<body>
-		<header>
-            <h1>Eletroeletrônica Aplicada</h1>
-            <nav>
-                <a href="https://sancheslapaz.github.io/inicio/" title="Página Principal">Principal</a>
-                <a href="https://sancheslapaz.github.io/curriculo/" title="Currículo Profissional">Currículo</a>
-                <a href="https://sancheslapaz.github.io/tecnico/"  title="Conteúdo técnico" >Técnico Eletrônico</a>
-                <a href="https://sancheslapaz.github.io/engenharia/" title="Conteúdo de Engenharia">Engenharia Elétrica</a>
-                <a href="https://sancheslapaz.github.io/matematica/" title="Conteúdo Matemático">Matemática Aplicada</a>
-            </nav>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo de eletroeletronica - página inicial">
+    <title>Princípios da eletroeletrônica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster+Two:wght@400;700&family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="_style/animation.css"/>
+    <link type="text/css" rel="stylesheet" href="_style/mainLayout.css"/>
+    <link type="text/css" rel="stylesheet" href="_style/typography.css"/>
+    <link type="text/css" rel="stylesheet" href="_style/layoutScreen_2.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="_style/layoutTablet.css" media="screen and (max-width:1024px)"/>-->
+    <!--<link type="text/css" rel="stylesheet" href="_style/layoutMobile.css" media="screen and (max-width:812px)"/>-->
+</head>
+    <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onKeyDown='blockKeyCTRL(event);'>
+        <!--<div id="teste"></div>-->
+        <nav>
+            <div></div>
+            <ul id="navEsquerda">
+                <!--<li><a href="#">Principal</a></li>-->
+                <li><a href="#">Currículo</a></li>
+                <li><a href="#">Eletricidade</a></li>
+                <li><a href="#">Eletrônica</a></li>
+                <li><a href="#">Matemática Aplicada</a></li>
+            </ul>
+            <ul id="navDireita">
+                <li><a id="Online" href="#">Cursos On-line</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div id="apresentacao">
+                <h1>Estudo da eletricidade e eletrônica</h1>
+                <h4>Apresentamos neste site teorias e a prática para quem quer estudar ou já estudou e trabalha ou não na área eletroeletrônica</h4>
+                <a href="#">Inscreva-se em um de nossos cursos On-line</a>
+            </div>
         </header>
-		<div>
-			<article id="wrapper">
-                <h2>Site em construção Aguarde</h2>
-				<section id="tecnico">
-                    <h2>Técnico Eletrônico</h2>
-                </section>
-                <section id="engenharia">
-                    <h2>Engenharia Elétrica</h2>
-                </section>
-                <section id="matematica">
-                    <h2>Matemática Aplicada</h2>
-                </section>
-			</article>
-			<!-- <aside>goto</aside> -->
-		</div>					<!-- TAG divisória do corpo HTML -->
-        <footer>
-            <p>&copy; Todos os direitos reservados <br>
-                Ano de construção inicial: 2019</p>
+        <section id="boardApresentacao">
+            <h2>O que deseja fazer?</h2>
+            <div id="cursosMestre">
+                <div class="cursoOpcao">
+                    <h5>Currículo</h5>
+                    <p>
+                        <br>Nesta seção faço uma breve apresentação dos meus conhecimentos profissionais e as empresas que pude colaborar com meu trabalho.
+                    </p>
+                    <a href="#" title="Currículo Profissional" class="curriculo">
+                        <img src="_image/Curr%C3%ADculo.png"
+                                class="foto_curso"/>
+                    </a>   
+                </div>
+                <div class="cursoOpcao">
+                    <h5>Eletricidade</h5>
+                    <p>
+                        Esta seção foi preparada para apresentar uma abordagem teórico prática para os alunos e pessoas que trabalham ou queiram trabalhar com a área da elétrica.
+                    </p>
+                    <a href="#" title="Aplicações Elétricas">
+                        <img src="_image/T%C3%A9cnico.png" class="foto_curso"/>
+                    </a>
+                </div>
+                <div class="cursoOpcao">
+                    <h5>Eletrônica</h5>
+                    <p>
+                        Esta seção foi preparada para apresentar uma abordagem teórico prática para os alunos e pessoas que trabalham ou queiram trabalhar com a área da eletrônica.
+                    </p>
+                    <a href="#" title="Aplicações Eletrônicas">
+                        <img src="_image/T%C3%A9cnico.png" class="foto_curso"/>
+                    </a>
+                </div>
+                <div class="cursoOpcao">
+                    <h5>Microcontroladores</h5>
+                    <p>
+                        Esta seção foi preparada para apresentar uma abordagem teórico prática para os alunos e pessoas que trabalham ou queiram trabalhar com Microcontroladores.
+                    </p>
+                    <a href="#" title="Microcontroladores">
+                        <img src="_image/T%C3%A9cnico.png" class="foto_curso"/>
+                    </a>
+                </div>
+                <div class="cursoOpcao">
+                    <h5>Matemática aplicada</h5>
+                    <p><br>Aqui teremos uma abordagem da matemática para quem estuda ou trabalha com sistemas eletroeletrônicos, eletrônica digital e analógica.
+                    </p>
+                    <a href="#" title="Matemática Aplicada">
+                        <img src="_image/Matem%C3%A1tica.png" class="foto_curso"/>
+                    </a>
+                </div>
+                <div class="cursoOpcao">
+                    <h5>Cursos On-line</h5>
+                    <p>Esta seção foi preparada para mostrar nossos curso on-line gratuitos e pagos. E alguns cursos práticos que possam ajudar a todos com uma abordagem prático teórica.</p>
+                    <a href="#" title="Inscreva-se">
+                        <img src="_image/Pena.png" class="foto_curso"/>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="eletrica">
+            <h2>Eletricidade Geral</h2>
+            <h2>O que deseja encontrar?</h2>
+            <div id="boardEletrica">
+                <div id=beEsquerda>
+                    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                </div>
+                <div id="beCentro">
+                    <h5>Assuntos relacionados a:</h5>
+                    <div id="beListas">
+                        <ul>
+                            <li>
+                                <a href="#" title="Eletricidade">
+                                    <img src="_image/Resistividade.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Neste tópico abordaremos assuntos relativos a eletricidade</p>
+                                <h6>Eletricidade</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Eletricidade Básica">
+                                    <img src="_image/Resistividade.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Eletricidade Básica e seus fundamentos</p>
+                                <h6>Eletricidade Básica</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Motores">
+                                    <img src="_image/Motor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Tipos de motores e suas respectivas construções</p>
+                                <h6>Motores</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Fechamento de motores">
+                                    <img src="_image/MotorAC.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Trabalharemos o fechamento de motores AC</p>
+                                <h6>Fechamento de motores</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Comandos Elétricos">
+                                    <img src="_image/MotorAC.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Trabalharemos neste tópico os comandos de acionamento de motores</p>
+                                <h6>Comandos Elétricos</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Resistividade">
+                                    <img src="_image/Resistividade.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Resistividade e a condutividade dos materiais</p>
+                                <h6>Resistividade</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Resistência">
+                                    <img src="_image/Resistor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Resistência e a condutância dos materiais</p>
+                                <h6>Resistência</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Capacitância">
+                                    <img src="_image/Capacitor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Capacitância de certos materiais e suas formas</p>
+                                <h6>Capacitância</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Indutância">
+                                    <img src="_image/Indutor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Indutância de certos materiais e suas formas</p>
+                                <h6>Indutância</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Lógica de comandos">
+                                    <img src="_image/MotorAC.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Trabalharemos neste tópico a lógica de comandos e a lógica ladder</p>
+                                <h6>Lógica de Comandos</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Tensão">
+                                    <img src="_image/Indutor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Tensão elétrica como se forma?</p>
+                                <h6>Tensão elétrica</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Corrente">
+                                    <img src="_image/Motor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Corrente elétrica como se forma?</p>
+                                <h6>Corrente elétrica</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Potência">
+                                    <img src="_image/MotorAC.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Potência elétrica como se forma?</p>
+                                <h6>Potência elétrica</h6>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div id="beDireita">
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section id="eletronica">
+            <h2>Eletrônica Geral</h2>
+            <h2>O que deseja encontrar?</h2>
+            <div id="boardEletronica">
+                <div id=betEsquerda>
+                    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                </div>
+                <div id=betCentro>
+                    <h5>Assuntos relacionados a:</h5>
+                    <div id="betListas">
+                        <ul>
+                            <li>
+                                <a href="#" title="Eletrônica Analógica">
+                                    <img src="_image/Resistor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Eletrônica Analógica e seus fundamentos</p>
+                                <h6>Eletrônica Analógica</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Eletrônica Digital">
+                                    <img src="_image/CI.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Eletrônica Digital e seus fundamentos</p>
+                                <h6>Eletrônica Digital</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Microcontroladores">
+                                    <img src="_image/CI.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Microcontroladores como trabalhar e fundamentos</p>
+                                <h6>Microcontroladores</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Programação Scratch">
+                                    <img src="_image/CI.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Fundamentos de trabalho com a programção de blocos</p>
+                                <h6>Scratch</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Programação C/C++">
+                                    <img src="_image/CI.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Fundamentos da programção C/C++</p>
+                                <h6>Linguagem C/C++</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Diodo semicondutor">
+                                    <img src="_image/Diodo.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Diodos e suas respectivas construções</p>
+                                <h6>Diodo</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Transistor">
+                                    <img src="_image/Transistor.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Transistores e suas respectivas construções</p>
+                                <h6>Transistor</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Circuito Integrado">
+                                    <img src="_image/CI.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Circuitos integrados e suas construções</p>
+                                <h6>Circuito Integrado</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Amplificadores">
+                                    <img src="_image/Amplificador.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Tipos de amplificadores e suas respectivas construções</p>
+                                <h6>Amplificadores</h6>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div id=betDireita>
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section id="matematica">
+            <h2>Matemática Aplicada</h2>
+            <h2>O que deseja encontrar?</h2>
+            <div id="boardMatematica">
+                <div id=bmEsquerda>
+                    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                </div>
+                <div id=bmCentro>
+                    <h5>Assuntos relacionados a:</h5>
+                    <div id="bmListas">
+                        <ul>
+                            <li>
+                                <a href="#" title="Notação Científica">
+                                    <img src="_image/Notacao.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Como trabalhar com notação científica</p>
+                                <h6>Notação científica</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Exponenciação">
+                                    <img src="_image/exponencial.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Neste tópico veremos como trabalhar o exponencial de um número</p>
+                                <h6>Exponenciação</h6>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#" title="Matriz numerica">
+                                    <img src="_image/funcao.png">
+                                </a>
+                            </li>
+                            <li>
+                                <p>Neste tópico veremos como trabalhar matrizes numéricas</p>
+                                <h6>Matriz Numérica</h6>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div id=bmDireita>
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <footer id="Rodape">
+            <div id="Rodape_mestre">
+                <div id=Rodape_direita>
+                    <h5>Entre em contato conosco:</h5>
+                    <div id="e_mail">
+                        <a href="#"> <ion-icon name="mail-outline"></ion-icon> </a>
+                        <h4>instrucaoeletronica@gmail.com</h4>
+                    </div>
+                </div>
+                <div id=Rodape_esquerda>
+                    <h5>Siga-nos em nossas redes sociais:</h5>
+                    <div id="esq_icon">
+                        <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+                        <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+                        <ion-icon id="yuotube" name="logo-youtube"></ion-icon>
+                        <ion-icon id="linkedin" name="logo-linkedin"></ion-icon>
+                    </div>
+                </div>      
+            </div>
+            <div id="bottom">
+                <p>&copy; Todos os direitos reservados</p>
+                <p>Site de: 2019-2021</p>
+            </div>
         </footer>
-	</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js" integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA==" crossorigin="anonymous"></script>
+        <script src="_script/script.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
 </html>
