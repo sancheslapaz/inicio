@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/********************************************************************
+ *****  CSS Documents                                           *****
+ ********************************************************************
+ *****  moz-linear-gradienter(red, green) - Firefox             *****
+ *****  webkit-linear-gradienter(red, green) - Safari, Chrome   *****
+ *****  o-linear-gradienter(red, green) - Opera                 *****
+ ********************************************************************
+ ********************************************************************
+ *****                  Paleta de cores do Site                 *****
+ ********************************************************************
+                    Preto:              #000000
+                    Azul Claro:         #5D9AFF
+                    Branco:             #FFFFFF
+                    Vermelho Rosado:    #FD3162
+                    Verde claro:        #1D8C19
+
+                    Cinza Escuro:       #737373
+                    Cinza Claro:        #C2C2C2
+ ********************************************************************
+ *****              Tipos das letras usadas no Site             *****
+ ********************************************************************
+                font-family: 'DM Serif Display', serif;
+                font-family: 'Lobster Two', cursive;
+                font-family: 'Open Sans', sans-serif;
+                font-family: Arial, 'Times New Roman';
+ ********************************************************************/
+
+/****************************************
+ *****  Neutralidade da tipografia  *****
+ ****************************************/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/****************************************
+ *****      Tipografia geral        *****
+ ****************************************/
+h1, h2, h3{
+    font-family: Arial, 'Times New Roman';
+    font-size: 16px;
+}
+h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+p, a, li{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/********************************************
+ *****      Cabeçalho do Navegador      *****
+ *****      Elementos do HEADER         *****
+ ********************************************/
+header div#apresentacao h1{
+    color: white;
+    font-size: 180%;
+    text-shadow: 4px 6px 16px gray;
+    margin-bottom: 60px;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+header div#apresentacao h4{
+    color: #1D8C19;
+    font-size: 120%;
+    text-shadow: 4px 6px 16px gray;
+    line-height: 1.4;
+    margin: 0 140px 60px;
+    animation-name: HeaderH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+header div#apresentacao a{
+    font-size: 110%;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 50px;
+    border-radius: 50px;
+    background: linear-gradient(rgba(93,154,255,100) 0%, rgba(71,79,145,57) 50%, rgba(71,93,203,81) 100%);
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+/********************************************
+ *****  Seção - quadro de apresentação  *****
+ ********************************************/
+section#boardApresentacao h2{
+    font-size: 150%;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 50px 0 30px;
+    opacity: 0;
+}
+
+section#boardApresentacao div#cursosMestre div.cursoOpcao h5{
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+section#boardApresentacao div#cursosMestre div.cursoOpcao p{
+    font-size: 120%;
+    margin: 0 20px;
+}
+
+section div div img.foto_curso{
+    margin: 20px 20px 40px;
+    padding: 5px;
+    width: 15%;
+    background: linear-gradient(rgba(0,0,0, 0.6), rgba(93,154,255,100) 100%, rgba(93,154,255,100) 40%);
+}
+
+/********************************************
+ *****          Seção - elétrica        *****
+ ********************************************/
+section#eletrica h2{
+    font-size: 150%;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 20px 0 20px;
+}
+
+section#eletrica div#boardEletrica div#beCentro h5{
+    font-size: 110%;
+    text-align: center;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 10px 0 10px;
+}
+
+section#eletrica div#boardEletrica div#beCentro div#beListas ul li{
+    list-style: none;
+    display: inline-table;
+    width: 90%;
+    margin: 0;
+}
+
+section#eletrica div#boardEletrica div#beCentro div#beListas ul li p{
+    font-size: 110%;
+    margin: 0 auto 20px;
+}
+
+section#eletrica div#boardEletrica div#beCentro div#beListas ul li h6{
+    font-size: 110%;
+}
+
+section#eletrica div#boardEletrica div#beCentro div#beListas ul li img{
+    width: 100px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    border: 2px solid #FD3162;
+}
+
+/********************************************
+ *****      Seção - eletronica          *****
+ ********************************************/
+ section#eletronica h2{
+    font-size: 150%;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 20px 0 20px;
+}
+
+section#eletronica div#boardEletronica div#betCentro h5{
+    font-size: 110%;
+    text-align: center;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 10px 0 10px;
+}
+
+section#eletronica div#boardEletronica div#betCentro div#betListas ul li{
+    list-style: none;
+    display: inline-table;
+    width: 90%;
+    margin: 0;
+}
+
+section#eletronica div#boardEletronica div#betCentro div#betListas ul li p{
+    font-size: 110%;
+    margin: 0 auto 20px;
+}
+
+section#eletronica div#boardEletronica div#betCentro div#betListas ul li h6{
+    font-size: 110%;
+}
+
+section#eletronica div#boardEletronica div#betCentro div#betListas ul li img{
+    width: 100px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    border: 2px solid #FD3162;
+}
+
+/********************************************
+ *****      Seção - matematica          *****
+ ********************************************/
+ section#matematica h2{
+    font-size: 150%;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 20px 0 20px;
+}
+
+section#matematica div#boardMatematica div#bmCentro h5{
+    font-size: 110%;
+    text-align: center;
+    text-shadow: 5px 7px 17px #737373;
+    margin: 10px 0 10px;
+}
+
+section#matematica div#boardMatematica div#bmCentro div#bmListas ul li{
+    list-style: none;
+    display: inline-table;
+    width: 90%;
+    margin: 0;
+}
+
+section#matematica div#boardMatematica div#bmCentro div#bmListas ul li p{
+    font-size: 110%;
+    margin: 0 auto 20px;
+}
+
+section#matematica div#boardMatematica div#bmCentro div#bmListas ul li h6{
+    font-size: 110%;
+}
+
+section#matematica div#boardMatematica div#bmCentro div#bmListas ul li img{
+    width: 100px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    border: 2px solid #FD3162;
+}
+
+/********************************************
+ *****              Rodapé              *****
+ ********************************************/
+footer div#Rodape_mestre h5{
+    margin: 10px;
+    font-size: 110%;
+}
+
+footer#Rodape div#bottom p{
+    color: #5D9AFF;
+    font-size: 110%;
+}
+
+footer div div div#e_mail{
+    font-size: 120%;
+}
