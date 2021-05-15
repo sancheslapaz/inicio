@@ -14,17 +14,6 @@
                     Vermelho Rosado:    #FD3162
                     Verde claro:        #1D8C19
  ********************************************************************/
-/*body div#teste{
-    background-color: aquamarine;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 60px;
-    z-index: 10;
-    color: #000;
-}*/
-
 /****************************************
  *****      Neutralidade do layout  *****
  ****************************************/
@@ -38,7 +27,7 @@
  ********************************************/
  header{
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(../_image/microcontrolador_01.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(microcontrolador_01.png);
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -78,7 +67,7 @@ header div#apresentacao{
 
 nav div{
     float: left;
-    background-image: url(../_image/IMG-20200514-WA0016.jpg);
+    background-image: url(IMG-20200514-WA0016.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 15px;
@@ -150,7 +139,7 @@ nav ul li a:hover{
  ********************************************/
  section#boardApresentacao{
     width: 100%;
-    /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)), url(../_image/display.png);*/
+    /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)), url(display.png);*/
     background-size: cover;
     background-position: center center;
     padding: 50px 0 50px;
@@ -183,7 +172,7 @@ section{
  ********************************************/
  section#eletrica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../_image/MotorAC01.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(MotorAC01.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -248,7 +237,7 @@ section div div div#beListas ul{
  ********************************************/
 section#eletronica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../_image/LEDs.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(LEDs.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -312,7 +301,7 @@ section div div div#betListas ul{
  ********************************************/
 section#matematica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(../_image/funçõesMatemáticas.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(funçõesMatemáticas.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -376,7 +365,7 @@ section div div div#bmListas ul{
  ********************************************/
  footer#Rodape{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../_image/Painel_LEDS.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(Painel_LEDS.png);
     background-size: cover;
     background-position: center center;
     padding: 0 0 10px;
