@@ -67,7 +67,7 @@ header div#apresentacao{
 
 nav div{
     float: left;
-    background-image: scr('inicio/IMG-20200514-WA0016.jpg');
+    background-image: scr('IMG-20200514-WA0016.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     margin: 15px;
@@ -139,7 +139,7 @@ nav ul li a:hover{
  ********************************************/
  section#boardApresentacao{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)), scr('inicio/display.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1)), scr('display.png');
     background-size: cover;
     background-position: center center;
     padding: 50px 0 50px;
@@ -172,7 +172,7 @@ section{
  ********************************************/
  section#eletrica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), scr('inicio/MotorAC01.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), scr('MotorAC01.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -237,7 +237,7 @@ section div div div#beListas ul{
  ********************************************/
 section#eletronica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), scr('inicio/LEDs.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), scr('LEDs.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -301,7 +301,7 @@ section div div div#betListas ul{
  ********************************************/
 section#matematica{
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), scr('inicio/funçõesMatemáticas.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), scr('funçõesMatemáticas.png');
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -365,7 +365,7 @@ section div div div#bmListas ul{
  ********************************************/
  footer#Rodape{
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), scr('inicio/Painel_LEDS.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), scr('Painel_LEDS.png');
     background-size: cover;
     background-position: center center;
     padding: 0 0 10px;
