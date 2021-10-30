@@ -27,7 +27,7 @@
  ********************************************/
  header{
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), scr('inicio/microcontrolador_01.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), scr('microcontrolador_01.png');
     background-size: cover;
     background-position: center center;
     width: 100%;
